@@ -31,3 +31,77 @@ path[d='M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88
 div[id^="pinned-messages-"] .contents-2mQqc9 img {
   top: 15px;
 }
+
+/* Enlarge Emoji in details popout */
+.emojiSection-3Fb9ix > .noWrap-3jynv6, .emojiSection-3Fb9ix {
+	flex-wrap: wrap;
+  }
+  .emojiSection-3Fb9ix img ~ div {
+	margin-left: 0 !important;
+	margin-top: 10px !important;
+  }
+  .emojiSection-3Fb9ix img {
+	margin: auto;
+	min-width: 100%;
+	height: auto !important;
+  }
+
+/* Hides Textbox when you don't have permission in channel */
+.channelTextAreaDisabled-8rmlrp>div {
+    display: none;
+}
+
+/* Compressed Search Bar */
+.search-2oPWTC .searchBar-3dMhjb {
+    width: 30px;
+    transition-duration: 300ms;
+}
+.search-2oPWTC .searchBar-3dMhjb:hover {
+    width: 200px;
+}
+.search-2oPWTC.focused-31_ccS .searchBar-3dMhjb {
+    width: 244px !important;
+}
+.search-2oPWTC .icon-38sknP {
+    cursor: pointer;
+}
+
+/* Better RTC Connection popout */
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
+	left: 72px !important;
+}
+.container-2x5lvQ {
+	width: 240px;
+	box-shadow: none;
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ header {
+	background-color: var(--toast-header);
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
+	background-color: var(--deprecated-panel-background);
+}
+.container-2x5lvQ section p:nth-of-type(1) {
+	font-size: 0;
+}
+.container-2x5lvQ section p:nth-of-type(2) {
+	display: none;
+}
+.container-2x5lvQ section strong {
+	font-size: 14px;
+	white-space: pre;
+}
+.container-2x5lvQ section strong::before {
+	font-weight: normal;
+}
+.container-2x5lvQ section strong:nth-of-type(1)::before {
+	content: 'Server: ';
+}
+.container-2x5lvQ section strong:nth-of-type(2)::before {
+	content: 'Average Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(3)::before {
+	content: 'Last Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(4)::before {
+	content: 'Packet Loss: ';
+}
