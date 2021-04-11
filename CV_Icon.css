@@ -21,3 +21,21 @@
   .button-1w5pas.open-1Te94t {
     transform: none;
 }
+
+/* Better Voice Connected Icon */
+.ping-2NgC8E {
+    transform: scale(1.7);
+    margin-left: 5px;
+    margin-top: 11px;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.channel-1TmDQ6 {
+    margin-left: 30px;
+    margin-top: -9px;
+}
+
+.rtcConnectionStatusConnected-VRZDjy {
+    margin-left: 5px;
+}
