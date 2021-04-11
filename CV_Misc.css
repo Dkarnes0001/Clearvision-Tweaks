@@ -1,0 +1,33 @@
+/* Reveal spoiler on hover */
+.spoilerText-3p6IlD.hidden-HHr2R9:hover .inlineContent-3ZjPuv {
+	opacity: 1;
+	border-radius: 3px;
+	background-color: #4a4d53;
+}
+
+/* New Pinned SVG */
+path[d='M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88001L5.73596 8.46501L4.32196 9.88001L8.56496 14.122L2.90796 19.778L4.32196 21.192L9.97896 15.536L14.222 19.778L15.636 18.364L14.222 16.95L19.171 12H19.172L20.586 13.414L22 12Z'] {
+    d:path('M21.2,8.77l-.56.55a.53.53,0,0,1-.75,0l-.43-.43-3.61,5.22.36.35a.54.54,0,0,1,0,.76l-.56.55a.53.53,0,0,1-.75,0l-2.69-2.69L3,21.31c-.15.14-.42-.13-.28-.28l8.23-9.24L8.23,9.1a.53.53,0,0,1,0-.75l.55-.56a.54.54,0,0,1,.76,0l.35.36,5.22-3.61-.43-.43a.53.53,0,0,1,0-.75l.55-.56a.56.56,0,0,1,.76,0L21.2,8A.56.56,0,0,1,21.2,8.77Z');
+}
+
+/* Home Button Wiggle */
+.homeIcon-tEMBK1 {
+    animation: Home 1.5s infinite ease-in-out;
+  }
+  @keyframes Home {
+    0% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(4deg) scale(1.01);
+    }
+    100% {
+      transform: rotate(-4deg);
+    }
+}
+
+/* Fix Avatar in Search and Pinned Messages */
+.searchResultMessage-1fxgXh.hit-1fVM9e > div > .contents-2mQqc9 img,
+div[id^="pinned-messages-"] .contents-2mQqc9 img {
+  top: 15px;
+}
