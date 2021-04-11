@@ -33,8 +33,7 @@
 	  background: rgb(50, 50 50);
 	  color: white;
 }
-  
-/* fixes the duped Cv :tm: when spotify module is active */
-  .powercord .powercord-spotify > .container-3baos1:before, .powercord .powercord-spotify > .container-3baos1:after {
-	content: none;
+/* Spotify controls on hover(requires PowerCord Mod Client)*/
+  .powercord-spotify > .container-3baos1 > .flex-1xMQg5 > .button-14-BFJ {display:none;}
+  .powercord-spotify.hover > .container-3baos1 > .flex-1xMQg5 > .button-14-BFJ {display:initial !important;}
 }
