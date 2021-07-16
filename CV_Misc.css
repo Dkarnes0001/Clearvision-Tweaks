@@ -1,3 +1,4 @@
+/* MISC TWEAKS AND FIXES FOR POWERCORD AND BD */
 /*  Improved user area and status picker */
 #status-picker-online {
 	--status-colour: var(--bsi-online-color, rgb(59, 165, 92));
@@ -20,29 +21,6 @@
   #status-picker .item-1tOPte:active .status-1AY8sU,
   #status-picker .item-1tOPte.focused-3afm-j .status-1AY8sU {
 	background-color: white !important;
-  }
-
-  /* Change Min/Max/Close button colors */
-  .winButtonClose-1HsbF- {
-	color:#ed4245;
-  }
-  
-  .winButtonMinMax-PBQ2gm[aria-label="Maximize"] {
-	color:#d5b60a;
-  }
-  
-  .winButtonMinMax-PBQ2gm[aria-label="Maximize"]:hover {
-	background-color:#d5b60a;
-	color:white;
-  }
-  
-  .winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
-	color:#2541B2;
-  }
-  
-  .winButtonMinMax-PBQ2gm[aria-label="Minimize"]:hover {
-	background-color:#2541B2;
-	color:white;
   }
 
 /*  NITRO PERK TWEAKS */
@@ -89,8 +67,8 @@
 
 /* Content Focus Backdrop Background Blur */
 #app-mount div > .backdrop-1wrmKB, .layer-2KE1M9 {
-    backdrop-filter: blur(18px); /* Customizable Value (the higher the pixel count, the more blur there is) */
-    transition: opacity .5s;
+    backdrop-filter: blur(5px); /* Customizable Value (the higher the pixel count, the more blur there is) */
+    transition: opacity .25s;
 }
 
 .backdrop-1wrmKB.withLayer-RoELSG {
@@ -156,38 +134,34 @@
 .messageGroupBlocked-3wrQQX , .messageGroupBlockedBtn-1PBBh-{
 	display:none}
 
-/* Content Focus Backdrop Background Blur */
-#app-mount div > .backdrop-1wrmKB, .layer-2KE1M9 {
-    backdrop-filter: blur(5px); /* Customizable Value (the higher the pixel count, the more blur there is) */
-    transition: opacity .25s;
-}
-
 .backdrop-1wrmKB.withLayer-RoELSG {
     opacity: 0.5 !important;
     transition: opacity .5s;
 }
 
-/* Change Min/Max/Close button colors */
-  .winButtonClose-1HsbF- {
-	color:#ed4245;
-}
-  
-.winButtonMinMax-PBQ2gm[aria-label="Maximize"] {
-	color:#d5b60a;
-}
-  
-.winButtonMinMax-PBQ2gm[aria-label="Maximize"]:hover {
-	background-color:#d5b60a;
-	color:white;
-}
-  
+/* Custom Min/Max/Close button colors */
 .winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
-	color:#2541B2;
+	color:red;
 }
-  
 .winButtonMinMax-PBQ2gm[aria-label="Minimize"]:hover {
-	background-color:#2541B2;
-	color:white;
+	background-color:#303030;
+	color:red;
+}
+
+.winButtonMinMax-PBQ2gm[aria-label="Maximize"] {
+	color:red;
+}
+.winButtonMinMax-PBQ2gm[aria-label="Maximize"]:hover {
+	background-color:#303030;
+	color:red;
+}
+
+.winButtonClose-1HsbF-[aria-label="Close"] {
+	color:red;
+}
+.winButtonClose-1HsbF-[aria-label="Close"]:hover {
+	background-color:#303030;
+	color:red;
 }
 
 /* Nicer pin/unpin message icons */
@@ -246,16 +220,16 @@
 /* Enlarge Emoji in details popout */
 .emojiSection-3Fb9ix > .noWrap-3jynv6, .emojiSection-3Fb9ix {
 	flex-wrap: wrap;
-  }
+}
   .emojiSection-3Fb9ix img ~ div {
 	margin-left: 0 !important;
 	margin-top: 10px !important;
-  }
+ }
   .emojiSection-3Fb9ix img {
 	margin: auto;
 	min-width: 100%;
 	height: auto !important;
-  }
+}
 
 /* Reveal spoiler on hover */
 .spoilerText-3p6IlD.hidden-HHr2R9:hover .inlineContent-3ZjPuv {
