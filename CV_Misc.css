@@ -179,20 +179,7 @@
     box-shadow: var(--elevation-low);
 }
 
-/* Moves user modal to the top. */
-.animatedContainer-1NSq4T{
-    box-shadow: none !important;
-}
-.animatedContainer-1NSq4T:after{
-  background: linear-gradient(00deg, var(--background-secondary) 30%, transparent 100%);
-  position:absolute;
-  content: '';
-  height:30px;
-  width:100%;
-  bottom: 0;
-}
 /* Collapsed Search Bar */
-/* Shrunken Search Bar */
 [class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] {
     background: none;
     width: 24px;
@@ -240,4 +227,244 @@
 .container-16j22k > .content-1-zrf2,
 .container-16j22k > .problems-3mgf6w {
   display: none;
+}
+
+/* Hide blocked user messages */
+.messageGroupBlocked-3wrQQX , .messageGroupBlockedBtn-1PBBh-{
+	display:none}
+
+/* Content Focus Backdrop Background Blur */
+#app-mount div > .backdrop-1wrmKB, .layer-2KE1M9 {
+    backdrop-filter: blur(18px); /* Customizable Value (the higher the pixel count, the more blur there is) */
+    transition: opacity .5s;
+}
+
+.backdrop-1wrmKB.withLayer-RoELSG {
+    opacity: 0.5 !important;
+    transition: opacity .5s;
+}
+
+/* Compact Friends, Stage Discovery, Library, and Nitro Store */
+.privateChannels-1nO12o .content-3YMskv { --columns: 4; display: grid; grid-template-columns: repeat(var(--columns), 1fr); grid-auto-rows: min-content; }
+.privateChannels-1nO12o .content-3YMskv > * { grid-column: 1/-1; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) { grid-column: auto; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .content-3QAtGj { display: none; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .avatar-3uk_u9 { width: 100%; margin: 0 !important; }
+.privateChannels-1nO12o .content-3YMskv .channel-2QD9_O:not([aria-label]) .layout-2DM8Md .children-gzQq2t { margin: 0 !important; }
+
+/*  NITRO PERK TWEAKS */
+/* More emoji power */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureEmoji-3pTtR2 > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color:#FFA600;
+}
+/* Personalized profile */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureProfile-tTo0C- > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color:#00E0A7;
+}
+/* support your server */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featurePremiumGuild-2KpCr6 > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color: #5C87CC;
+}
+/* rep your status */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureBadge-3ZA-Ca > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color: #FFAFFF;
+}
+/* bigger uploads */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureUploadSize-2CAVFL > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color:#776BFF;
+}
+/* hd video */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureGoLive-30cvVw > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color: #FA4E89;
+}
+/* longer messages */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureLongerMessageContent-1RADxx > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color:#ffd836;
+}
+/* more servers */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div:nth-child(2) > div > div.contentRegion-3nDuYy > div > div > main > div > div > div.featureGrid-3-fNl- > li.feature-2w65J5.featureMoreServers-14Thw5 > div.colorStandard-2KCXvj.size14-e6ZScH.featureDescription-1wp-zJ{
+    color:#a57ef8
+}
+
+  /* Change Min/Max/Close button colors */
+  .winButtonClose-1HsbF- {
+	color:#ed4245;
+  }
+  
+  .winButtonMinMax-PBQ2gm[aria-label="Maximize"] {
+	color:#d5b60a;
+  }
+  
+  .winButtonMinMax-PBQ2gm[aria-label="Maximize"]:hover {
+	background-color:#d5b60a;
+	color:white;
+  }
+  
+  .winButtonMinMax-PBQ2gm[aria-label="Minimize"] {
+	color:#2541B2;
+  }
+  
+  .winButtonMinMax-PBQ2gm[aria-label="Minimize"]:hover {
+	background-color:#2541B2;
+	color:white;
+  }
+
+/*  Nicer user area and status picker */
+#status-picker-online {
+	--status-colour: var(--bsi-online-color, rgb(59, 165, 92));
+  }
+  #status-picker-idle {
+	--status-colour: var(--bsi-idle-color, rgb(250, 166, 26));
+  }
+  #status-picker-dnd {
+	--status-colour: var(--bsi-dnd-color, rgb(237, 66, 69));
+  }
+  #status-picker-invisible {
+	--status-colour: var(--bsi-invisible-color, rgb(116, 127, 141));
+  }
+  /* Add :not(#status-picker-game-activity) after each of these :not s if applicable */
+  #status-picker .item-1tOPte:not(#status-picker-custom-status):active,
+  #status-picker .item-1tOPte:not(#status-picker-custom-status).focused-3afm-j {
+	background-color: var(--status-colour);
+  }
+  /* Only use this if you have Better Status Indicators */
+  #status-picker .item-1tOPte:active .status-1AY8sU,
+  #status-picker .item-1tOPte.focused-3afm-j .status-1AY8sU {
+	background-color: white !important;
+}
+
+/* Nicer pin/unpin message icons */
+.button-1ZiXG9[aria-label="Pin Message"] path {
+	d: path("M12 0c-5.522 0-10 4.395-10 9.815 0 5.505 4.375 9.268 10 14.185 5.625-4.917 10-8.68 10-14.185 0-5.42-4.478-9.815-10-9.815zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8zm4-7h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z");
+  }
+  .button-1ZiXG9[aria-label="Unpin Message"] path {
+	d: path("M12 0c-5.522 0-10 4.395-10 9.815 0 5.505 4.375 9.268 10 14.185 5.625-4.917 10-8.68 10-14.185 0-5.42-4.478-9.815-10-9.815zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8zm4-7h-8v-2h8v2z");
+}
+
+/* Better RTC Connection popout */
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
+	left: 72px !important;
+}
+.container-2x5lvQ {
+	width: 240px;
+	box-shadow: none;
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ header {
+	background-color: var(--toast-header);
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
+	background-color: var(--deprecated-panel-background);
+}
+.container-2x5lvQ section p:nth-of-type(1) {
+	font-size: 0;
+}
+.container-2x5lvQ section p:nth-of-type(2) {
+	display: none;
+}
+.container-2x5lvQ section strong {
+	font-size: 14px;
+	white-space: pre;
+}
+.container-2x5lvQ section strong::before {
+	font-weight: normal;
+}
+.container-2x5lvQ section strong:nth-of-type(1)::before {
+	content: 'Server: ';
+}
+.container-2x5lvQ section strong:nth-of-type(2)::before {
+	content: 'Average Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(3)::before {
+	content: 'Last Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(4)::before {
+	content: 'Packet Loss: ';
+}
+
+/* Hides Textbox when you don't have permission in channel */
+.channelTextAreaDisabled-8rmlrp>div {
+    display: none;
+}
+
+/* Enlarge Emoji in details popout */
+.emojiSection-3Fb9ix > .noWrap-3jynv6, .emojiSection-3Fb9ix {
+	flex-wrap: wrap;
+  }
+  .emojiSection-3Fb9ix img ~ div {
+	margin-left: 0 !important;
+	margin-top: 10px !important;
+  }
+  .emojiSection-3Fb9ix img {
+	margin: auto;
+	min-width: 100%;
+	height: auto !important;
+  }
+
+/* Reveal spoiler on hover */
+.spoilerText-3p6IlD.hidden-HHr2R9:hover .inlineContent-3ZjPuv {
+	opacity: 1;
+	border-radius: 3px;
+	background-color: #505050;
+}
+
+/* Revert the new rules channel icons. */
+path[d="M33 34.5833V7.49998H35V36.6666H9C6.791 36.6666 5 34.801 5 32.5V7.49998C5 5.19894 6.791 3.33331 9 3.33331H31V30.4166H9C7.8955 30.4166 7 31.3485 7 32.5C7 33.6515 7.8955 34.5833 9 34.5833H33ZM23.9718 9.99998L15.8889 17.9915L12.7086 14.8441L10 17.5058L15.8885 23.3333L26.6667 12.6669L23.9718 9.99998Z"] {
+    d:path('M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z');
+    transform: scale(1.66666667);
+}
+.iconWrapper-2OrFZ1 path[d="M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z"]{
+	d: path("M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.515 6.486 22 12 22 C 14.039 22 15.993 21.398 17.652 20.259 L 16.521 18.611 C 15.195 19.519 13.633 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 16.411 4 20 7.589 20 12 V 12.782 C 20 14.17 19.402 15 18.4 15 L 18.398 15.018 C 18.338 15.005 18.273 15 18.209 15 H 18 C 17.437 15 16.6 14.182 16.6 13.631 V 12 C 16.6 9.464 14.537 7.4 12 7.4 C 9.463 7.4 7.4 9.463 7.4 12 C 7.4 14.537 9.463 16.6 12 16.6 C 13.234 16.6 14.35 16.106 15.177 15.313 C 15.826 16.269 16.93 17 18 17 L 18.002 16.981 C 18.064 16.994 18.129 17 18.195 17 H 18.4 C 20.552 17 22 15.306 22 12.782 V 12 C 22 6.486 17.514 2 12 2 Z M 12 14.599 C 10.566 14.599 9.4 13.433 9.4 11.999 C 9.4 10.565 10.566 9.399 12 9.399 C 13.434 9.399 14.6 10.565 14.6 11.999 C 14.6 13.433 13.434 14.599 12 14.599 Z");
+}
+
+/* Better Voice Connected Icon */
+.ping-2NgC8E {
+    transform: scale(1.7);
+    margin-left: 5px;
+    margin-top: 11px;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.channel-1TmDQ6 {
+    margin-left: 30px;
+    margin-top: -9px;
+}
+
+.rtcConnectionStatusConnected-VRZDjy {
+    margin-left: 5px;
+}
+
+/* Discord Menu Icon tweak */
+  .button-1w5pas {
+    background: url('https://raw.githack.com/CorellanStoma/Powercord/assets/Icons/menu.svg');
+    width: 18px;
+    height: 18px;
+    position: relative;
+    opacity: 1;
+    top: 0px;
+  }
+  .button-1w5pas path {
+    display: none;
+  }
+  .button-1w5pas.open-1Te94t {
+    transform: none;
+}
+
+/* HORIZONTAL SERVER LIST TWEAKS */
+:root {
+	--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+	--HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+}
+
+/* GRADIENT TWEAKS */
+:root {
+--gradient-color1: rgb(175, 0, 0); /* primary color [default: var(--main-color) */
+--gradient-color2: rgb(125, 0, 0); /* secondary color [default: var(--hover-color) */
+--gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
+}
+
+/* Speech Bubbbles */
+:root {
+--bubble-color: rgba(255, 0, 0, 0.25);
+--bubble-hover-color: rgba(100, 0, 0, 0.25);
 }
