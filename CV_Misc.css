@@ -291,7 +291,6 @@ path[d="M33 34.5833V7.49998H35V36.6666H9C6.791 36.6666 5 34.801 5 32.5V7.49998C5
     margin-left: 5px;
 }
 
-
 /* HORIZONTAL SERVER LIST TWEAKS */
 :root {
 	--HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
