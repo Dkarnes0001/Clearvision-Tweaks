@@ -1,4 +1,4 @@
-/*  Nicer user area and status picker */
+/*  Improved user area and status picker */
 #status-picker-online {
 	--status-colour: var(--bsi-online-color, rgb(59, 165, 92));
   }
@@ -160,3 +160,84 @@
 /* Hide blocked user messages */
 .messageGroupBlocked-3wrQQX , .messageGroupBlockedBtn-1PBBh-{
 	display:none}
+
+/* Moves user modal to the top. */
+.panels-j1Uci_,.sidebar-2K8pFh {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-3baos1 {
+    height: 48px;
+    margin-bottom: 0px;
+}
+
+.panels-j1Uci_>*:nth-last-child(2):before {
+    content: "";
+    display: block;
+    margin-top: -1px;
+    height: 1px;
+    box-shadow: var(--elevation-low);
+}
+
+/* Moves user modal to the top. */
+.animatedContainer-1NSq4T{
+    box-shadow: none !important;
+}
+.animatedContainer-1NSq4T:after{
+  background: linear-gradient(00deg, var(--background-secondary) 30%, transparent 100%);
+  position:absolute;
+  content: '';
+  height:30px;
+  width:100%;
+  bottom: 0;
+}
+/* Collapsed Search Bar */
+/* Shrunken Search Bar */
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] {
+    background: none;
+    width: 24px;
+    color: var(--color-text);
+    transition: width 0.2s, padding 0.5s;
+    padding: 0 !important;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] [class*="iconContainer-"] {
+    width: 24px !important;
+    height: 24px;
+    cursor: pointer !important;
+}
+[class*="toolbar-"] > [class*="search-"] [class*="searchBar-"] svg {
+    color: var(--color-text);
+    width: 24px;
+    height: 24px;
+    padding: 0.5px;
+}
+[class*="toolbar-"] > [class*="search-"] > [class*="open-"] [class*="searchBar-"] {
+    width: 300px;
+    padding: 0 10px !important;
+}
+[class*="toolbar-"] > [class*="search-"] > [class*="open-"] [class*="searchBar-"] svg {
+    color: var(--text-muted);
+    transform: scale(0.8);
+}
+
+/* Nicer offline container */
+.container-16j22k {
+  /* You may need to adjust this */
+  --translate-px: -389px;
+  height: 1px;
+  transform: translateY(var(--translate-px));
+  background: transparent;
+}
+.container-16j22k::before {
+  content: 'You are offline!';
+  top: 0.5px;
+  position: absolute;
+  font-weight: 900;
+  font-size: smaller;
+  color: var(--info-danger-foreground);
+  text-transform: uppercase;
+}
+.container-16j22k > .content-1-zrf2,
+.container-16j22k > .problems-3mgf6w {
+  display: none;
+}
